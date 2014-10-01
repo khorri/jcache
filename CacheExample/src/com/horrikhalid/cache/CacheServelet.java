@@ -16,6 +16,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.horrikhalid.dao.UserDao;
+import com.horrikhalid.service.UserService;
+
 /**
  * Servlet implementation class CacheServelet
  */
@@ -57,6 +60,7 @@ public class CacheServelet extends HttpServlet {
 	public void init(ServletConfig config) throws ServletException {
 		// TODO Auto-generated method stub
 		super.init(config);
+		UserDao.initConnection();
 		if(this.cache == null){
 			CachingProvider provider = Caching.getCachingProvider();
 			CacheManager manager = provider.getCacheManager();

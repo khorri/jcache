@@ -11,7 +11,9 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/cache-api-1.0.0-RC1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/cache-ri-impl-1.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.9-bin.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
